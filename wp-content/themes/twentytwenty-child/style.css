@@ -1,0 +1,42 @@
+/*
+Theme Name: Movies
+Template: twentytwenty
+Description: Child theme
+Author: Rostyslav Kovba
+Author URI: https://github.com/RostislavKovba/
+Version: 1.0
+*/
+
+@import url("../twentytwenty/style.css");
+
+h2.entry-title {
+    margin-top: 5rem;
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movies-list article {
+    box-shadow: 0 1px 3px #0000004a;
+    margin: 2rem;
+    padding: 1rem;
+    width: 30%;
+}
+
+@media (max-width: 1024px) {
+    .movies-list article {
+        box-shadow: 0 1px 3px #0000004a;
+        margin: 2rem;
+        padding: 1rem;
+        width: 50%;
+    }
+}
+
+@media (max-width: 560px) {
+    .movies-list article {
+        width: 100%;
+    }
+}
